@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GYM Website</title>
+    <style>
+        body{
+            background: url(./img/bg2.jpg);
+            background-size: 100%;
+            
+        }
+        nav{
+            background-color: transparent;
+            height: 90px;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+        .left{
+            color: white;
+            /* border: 1px solid; */
+            text-align: center;
+        }
+        .left img{
+            height: 60px;
+            width: 70px;
+            filter: invert(100%);
+            /* border: 1px solid; */
+            
+        }
+        .left h3{
+            margin-top: -10px;
+            color: red;
+        }
+        .middle ul{
+            display: flex;
+        }
+        .middle ul li{
+            list-style: none;
+        }
+        .middle li a{
+            text-decoration: none;
+            color: white;
+            margin: 0px 16px;
+
+        }
+        .middle li a:hover{
+            color: tomato;
+            
+        }
+        .right button{
+            padding: 7px 10px;
+            font-weight: bold;
+            border-radius: 8px;
+            border: 1px solid white;
+            cursor: pointer;
+            margin: 0px 3px;
+            background-color:white;
+        }
+        
+        .sec{
+            border: 2px solid white;
+            /* background-color: aliceblue; */
+            height: 400px;
+            width: 35%;
+            text-align: center;
+            border-radius: 8px;
+            margin-left: 100px;
+            margin-top: 60px;
+            color: white;
+            box-shadow: 2px 2px 10px 3px rgba(250, 248, 248, 0.352);
+        }
+        .sec h1{
+            padding: 0px 100px;
+            word-wrap: normal;
+            font-family: 'Rubik Dirt', cursive;
+        }
+
+        .sec form{
+            height: 200px;
+            width: 250px;
+            display: flex;
+            flex-direction: column;
+            margin: auto;
+            
+        }
+        .sec form input{
+            text-align: center;
+            padding: 10px 0px;
+            border-radius: 8px;
+            border: none;
+            margin: 3px 0px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="left">
+            <img src="./img/logo.png" alt="">
+            <h3>Mission Fitness</h3>
+        </div>
+        <div class="middle">
+            <ul>
+                <li> <a href="" visited="active" >Home</a> </li>
+                <li> <a href="">About Us</a> </li>
+                <li> <a href="">Fitness Calculator</a> </li>
+                <li> <a href="">Contact Us </a> </li>
+            </ul>
+        </div>
+        <div class="right">
+            <button>Call us Now</button>
+            <button>Email Us</button>
+        </div>
+    </nav>
+    <section>
+        <div class="sec">
+            <h1>Register Now and Get <span style="color: tomato; font-size: 40px;">60%</span> off 
+                Hurry Up
+            </h1>
+            <form action="">
+                <input type="text" placeholder="Enter your name">
+                <input type="number" placeholder="Enter your age">
+                <input type="text" placeholder="Enter your gender">
+                <input type="text" placeholder="Enter your Locality">
+                <input type="submit">
+                
+            </form>
+        </div>
+    </section>
+</body>
+</html>
